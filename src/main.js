@@ -42,10 +42,6 @@ const torusKnotGeometry = new THREE.TorusKnotGeometry(0.5, 0.15, 100, 16);
 const sphereGeometry = new THREE.SphereGeometry(0.5, 32, 32);
 const planeGeometry = new THREE.PlaneGeometry(1, 1);
 
-const uv2 = new THREE.BufferAttribute(cubeGeometry?.attributes?.uv.array, 2);
-cubeGeometry.setAttribute("uv2", uv2);
-console.log(cubeGeometry);
-
 // MATERIAL
 const grassMaterial = new THREE.MeshStandardMaterial({
   aoMap: grassAoTexture,
